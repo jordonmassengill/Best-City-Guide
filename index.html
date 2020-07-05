@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <a name="top"></a>
 	<div class="wrap">
 		
 		<header class="main-header">
-                <h1>Student Name</a></h1>
+                <h1 class="title">Student Name</a></h1>
                 <nav>
                     <ul class="main-nav">
                         <li><a href="#">HOME</a></li>
@@ -22,47 +23,55 @@
         </header>
 
         <div class="intro">
-            <img class="profile-img" src="images/responsive-layout-profile.png">
+        <div class="profile-img">
+            <img src="images/responsive-layout-profile.png">
         </div>
         <p class="intro-text">
           Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web developement at Treehouse and am exciting to put all my skills to use!
         </p>
+        </div>
     </div>
 
 
     <main class="main">
         <div>
-            <h3>PORTFOLIO</h3>
+            <h4>PORTFOLIO</h4>
         </div>
-        <div>
-            <img src="images\portfolio-1.png" class="bigimage">
-            <h2>Marketing Page</h2>
-            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+        <div class="wrap1-2">
+            <div class="wrap1">
+                <img src="images\portfolio-1.png" class="bigimage img1">
+                <h2>Marketing Page</h2>
+                <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+            </div>
+            <div class="wrap2">
+                <img src="images\portfolio-2.png" class="bigimage img2">
+                <h2>Search Page</h2>
+                <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+            </div>
+         </div>
+         <div class="wrap3-4">
+            <div class="wrap3">
+                <img src="images\portfolio-3.png" class="bigimage img3">
+                <h2>Travel App</h2>
+                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+            </div>
+            <div class="wrap4">
+                <img src="images\portfolio-4.png" class="bigimage img4">
+                <h2>Map of Favorite Spots</h2>
+                <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+            </div>
         </div>
-        <div>
-            <img src="images\portfolio-2.png" class="bigimage">
-            <h2>Search Page</h2>
-            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-        </div>
-        <div>
-            <img src="images\portfolio-3.png" class="bigimage">
-            <h2>Travel App</h2>
-            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        </div>
-        <div>
-            <img src="images\portfolio-4.png" class="bigimage">
-            <h2>Map of Favorite Spots</h2>
-            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-        </div>
-        <div>
-            <img src="images\portfolio-5.png" class="bigimage">
-            <h2>Photo Gallery</h2>
-            <p>This project shows pictures from a recent trip to the viewer and allos them to easily navigate through photos.</p>
-        </div>
-        <div>
-            <img src="images\portfolio-6.png" class="bigimage">
-            <h2>Calculator</h2>
-            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        <div class="wrap5-6">
+            <div class="wrap5">
+                <img src="images\portfolio-5.png" class="bigimage img5">
+                <h2>Photo Gallery</h2>
+                <p>This project shows pictures from a recent trip to the viewer and allos them to easily navigate through photos.</p>
+            </div>
+            <div class="wrap6">
+                <img src="images\portfolio-6.png" class="bigimage img5">
+                <h2>Calculator</h2>
+                <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+            </div>
         </div>
     </main>
 
@@ -74,13 +83,13 @@
 
 
     <footer>
-        <h3>Contact</h3>
-        <div>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!<br>
-            Phone +1 (111) 555-1234<br>
-            Email email@yoursite.com
-        </div>
-        <div class="bottom-nav">Student Name</div>
-        <div class="bottom-nav">BACK TO TOP</div>
+        <h4>CONTACT</h4>
+        <div class="bottom-text"><p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+            <p>Phone&nbsp;&nbsp; <b>+1 (111) 555-1234</b></p>
+            <p>Email&nbsp;&nbsp; <b>email@yoursite.com</b></p>
+        </div><br><hr>
+        <div class="bottom-nav1"><b>Student Name</b></div>
+        <div class="bottom-nav2"><b><a href="#top">BACK TO TOP</a></b></div>
 
     </footer>
 </body>
