@@ -2,7 +2,9 @@
   Web Fonts
 ==================================== */
 
-
+@font-face {
+  src: url('../fonts/Mukta-Regular.ttf') format('truetype');
+}
 
 /* ================================= 
   Base Styles
@@ -24,8 +26,16 @@ img {
   max-width: 100%;
 }
 
+body {
+  font-family: 'Mukta';
+}
+
 h2 {
   font-weight: normal;
+}
+
+h4 {
+  text-align: center;
 }
 
 p {
@@ -44,6 +54,8 @@ footer {
 
 hr {
   border-color: rgb(255, 255, 255);
+  width: 80%;
+  max-width: 350px;
 }
 
 /* ================================= 
@@ -75,9 +87,9 @@ font-weight: bold;
 }
 
 .intro {
-text-align: center;
-margin-left: 20px;
-margin-right: 20px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .intro-text {
@@ -96,8 +108,16 @@ width: 397px;
 max-width: 100%;
 }
 
+.contact {
+  padding-bottom: 15px;
+}
+
 .bottom-text {
   color: grey;
+}
+
+hr {
+  max-width: 680px;
 }
 
 .bottom-nav1 {
@@ -108,6 +128,22 @@ max-width: 100%;
 .bottom-nav2 {
   float: right;
   padding: 40px 20px;
+  font-size: 14px;
+}
+
+.bottom-wrap {
+  max-width: 420px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-nav3 {
+  display: none;
+}
+
+#skills {
+  clear: both;
 }
 
 /* ---- Layout Containers ---- */
@@ -122,13 +158,14 @@ max-width: 100%;
   Media Queries
 ==================================== */
 /* TABLETS */
-@media (min-width: 769px) {
-  p {
-    color: green;
-  }
+@media (min-width: 768px) {
 
   .title {
     padding-bottom: 10px;
+  }
+
+  .wrap {
+    padding: 20px;
   }
 
   .main-nav li {
@@ -159,6 +196,7 @@ max-width: 100%;
     margin: 0;
     text-align: left;
     max-width: 400px;
+    width: 50%;
     font-size: 1.2em;
   }
 
@@ -167,17 +205,21 @@ max-width: 100%;
   }
 
   .wrap1 {
+    max-width: 415px;
     float: left;
-    padding: 5px
+    padding: 5px;
+    width: 48%;
   }
 
   .wrap2 {
-    float: right;
+    max-width: 415px;
+    float: left;
     padding: 5px;
+    width: 48%;
   }
 
   .wrap1-2 {
-    width: 830px;
+    max-width: 830px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -185,14 +227,18 @@ max-width: 100%;
 
   .wrap3 {
     float: left;
+    padding: 5px;
+    width: 48%;
   }
 
   .wrap4 {
     float: right;
+    padding: 5px;
+    width: 48%;
   }
 
   .wrap3-4 {
-    width: 830px;
+    max-width: 830px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -200,47 +246,186 @@ max-width: 100%;
 
   .wrap5 {
     float: left;
+    padding: 5px;
+    width: 48%;
   }
 
   .wrap6 {
     float: right;
+    padding: 5px;
+    width: 48%;
   }
 
   .wrap5-6 {
-    width: 830px;
+    max-width: 830px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
+  #skills {
+    padding-top: 20px;
+  }
+
+  .skills-text {
+    width: 450px;
+  }
+
   footer {
     clear: both;
   }
+
+  .contact {
+    font-size: 12px;
+  }
+
+  .bottom-text p {
+    width: 425px;
+  }
+
+  .contact-text {
+    padding-bottom: 30px;
+  }
+
+  .bottom-nav2 {
+    display: none;
+  }
+
+  .bottom-nav3 {
+    display: initial;
+    float: right;
+    padding: 40px 20px;
+    font-size: 14px;
+  }
+
+  .bottom-nav3 li {
+    display: inline;
+    text-decoration: bold;
+    padding: 10px
+  }
+
+  .bottom-wrap {
+    max-width: 850px;
+}
+
 }
 
 /* COMPUTER SCREENS */
 @media (min-width: 1024px) {
-  p {
-    color: purple;
+
+.wrap {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  float: left;
+}
+
+.main-nav ul {
+  float: right;
+}
+
+.main-nav li {
+  float: left;
+}
+
+.intro {
+  clear: both;
+  max-width: 1500px;
+}
+
+.profile-img {
+  max-width: 500px;
+}
+
+.bigimage {
+  max-width: 500px;
+  min-width: 250px;
+}
+
+.wrap1 {
+  float: left;
+  padding: 5px;
+  width: 32%;
+  max-width: 3000px;
+}
+
+.wrap2 {
+  float: left;
+  padding: 5px;
+  width: 32%;
+  max-width: 3000px;
+}
+
+.wrap1-2 {
+    max-width: 1280px;
+}
+
+.wrap3 {
+  float: left;
+  padding: 5px;
+  width: 32%;
+  max-width: 3000px;
+}
+
+.wrap1-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+.wrap4 {
+  float: left;
+  padding: 5px;
+  width: 32%;
+  max-width: 3000px;
+}
+
+.wrap3-4 {
+  max-width: 1280px;
 }
 
 
+.wrap5 {
+  float: left;
+  padding: 5px;
+  width: 32%;
+  max-width: 3000px;
+}
+
+.wrap6 {
+  float: left;
+  padding: 5px;
+  width: 32%;
+  max-width: 3000px;
+}
+
+.wrap5-6 {
+  max-width: 1280px;
+}
+
+.wrap4-6 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
+.skills-text {
+  max-width: 600px;
+}
 
+.contact-text {
+  max-width: 600px;
+}
 
+.bottom-wrap {
+  max-width: 1200px;
+}
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
